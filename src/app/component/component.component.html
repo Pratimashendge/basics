@@ -1,0 +1,89 @@
+<button (click)="isshow = !isshow" class="btn btn-info">
+  {{ isshow ? "Hide" : "show" }}
+</button>
+<hr />
+
+<div *ngIf="isshow" class="box"></div>
+
+<hr />
+
+<p
+  [ngStyle]="{ backgroundColor: isproductAvailable ? 'orange' : '#ededed' }"
+  [ngClass]="{
+    'text-white': isproductAvailable,
+    'text-danger': !isproductAvailable
+  }"
+>
+  Product Name is {{ ProductName }} with id {{ ProductId }}
+  <strong>
+    {{
+      isproductAvailable
+        ? "and the product is available"
+        : "and the product is not available"
+    }}
+  </strong>
+</p>
+<p
+  [ngStyle]="{ backgroundColor: isproductAvailable ? 'orange' : '#ededed' }"
+  [ngClass]="{
+    'text-white': isproductAvailable,
+    'text-danger': !isproductAvailable
+  }"
+>
+  Product Name is {{ ProductName2 }} with id {{ ProductId2 }}
+  <strong>
+    {{
+      isproductAvailable
+        ? "and the product is available"
+        : "and the product is not available"
+    }}
+  </strong>
+</p>
+<p
+  [ngStyle]="{ backgroundColor: isproductAvailable ? 'orange' : '#ededed' }"
+  [ngClass]="{
+    'text-white': isproductAvailable,
+    'text-danger': !isproductAvailable
+  }"
+>
+  Product Name is {{ ProductName3 }} with id {{ ProductId3 }}
+  <strong>
+    {{
+      isproductAvailable
+        ? "and the product is available"
+        : "and the product is not available"
+    }}
+  </strong>
+</p>
+<p
+  [ngStyle]="{ backgroundColor: isproductAvailable ? 'orange' : '#ededed' }"
+  [ngClass]="{
+    'text-white': isproductAvailable,
+    'text-danger': !isproductAvailable
+  }"
+>
+  Product Name is {{ ProductName4 }} with id {{ ProductId4 }}
+  <strong>
+    {{
+      isproductAvailable
+        ? "and the product is available"
+        : "and the product is not available"
+    }}
+  </strong>
+</p>
+<p
+  [ngStyle]="{ backgroundColor: isproductAvailable ? 'orange' : '#ededed' }"
+  [ngClass]="{
+    'text-white': isproductAvailable,
+    'text-danger': !isproductAvailable
+  }"
+>
+  Product Name is {{ ProductName5 }} with id {{ ProductId5 }}
+  <strong>
+    {{
+      isproductAvailable
+        ? "and the product is available"
+        : "and the product is not available"
+    }}
+  </strong>
+</p>
